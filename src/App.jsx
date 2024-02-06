@@ -36,6 +36,10 @@ const router = createBrowserRouter([
         path: '/cv',
         element: <Cv />
       },
+        {
+        path: '/hireme',
+        element: <Contact />
+      },
     ]
   },
 
@@ -46,9 +50,9 @@ function App() {
     {/* <Navbar />
     <About />
     <Projects />
-    <Skills />
-    <Contact /> */}
+    <Skills />*/}
     <RouterProvider router={router} />
+    {/* <Contact />  */}
   </main>
   )
 }
