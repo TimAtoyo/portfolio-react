@@ -1,3 +1,5 @@
+// import { quizApp } from '../assets/quizApp.png';
+
 export const projects = [
   {
     title: "Team Profile Generator",
@@ -28,7 +30,7 @@ export const projects = [
     subtitle: "Javascript HTML & CSS",
     description:
       "The Code Quiz App is a dynamic web application designed for users taking a front-end course. It features a quiz with questions in four main sections: HTML Basics, CSS Fundamentals, JavaScript Essentials, and Responsive Web Design.",
-    image: "./assets/quiz-app.png",
+    image: '../assets/quizApp.png',
     link: "https://timatoyo.github.io/front-code-quiz/",
   },
 ];

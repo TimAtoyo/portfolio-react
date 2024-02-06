@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import NotFountPage from './components/NotFoundPage.jsx';
 import Cv from './components/Cv.jsx'
+import Testimonials from './components/Testimonials.jsx'
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         {
         path: '/skills',
         element: <Skills />
+      },
+        {
+        path: '/testimonials',
+        element: <Testimonials />
       },
         {
         path: '/cv',

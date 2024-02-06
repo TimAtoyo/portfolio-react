@@ -24,7 +24,7 @@ export default function Navbar() {
               Skills
             </a>
             <a
-              href="#testimonials"
+              href="/testimonials"
               className="mr-5 text-gray-300 hover:text-white"
             >
               Testimonials

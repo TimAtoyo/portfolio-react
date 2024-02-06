@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Document, Page } from 'react-pdf';
+import { pdfjs } from 'react-pdf';
+import cv from '../assets/cv.pdf'
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url,
+).toString();
 function Cv() {
-    const pdfURL = '../assets/cv.pdf';
+
   return (
-    <Document file={pdfURL}>
-    <Page pageNumber={1} />
-    </Document>
+    
+  
+       <div className="flex mb-4">
+       <div className="flex-1 bg-gray-500 h-12">
+
+ <iframe src={cv} width='100%' style={{height: '87vh'}} />
+ </div>
+     </div>
+      
   )
 }
 

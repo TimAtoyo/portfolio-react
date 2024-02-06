@@ -1,0 +1,30 @@
+// import { quizApp } from '../assets/quizApp.png';
+
+export const testimonials = [
+  {
+    quote: "Great at design a pleasure to work with",
+    image: "https://placehold.co/600x400",
+    name: "Sarah",
+    company: "Friend",
+  },
+ 
+  {
+    quote: "Great at design a pleasure to work with",
+    image: "https://placehold.co/600x400",
+    name: "Sarah",
+    company: "Friend",
+
+  },
+ 
+  {
+    quote: "Great at design a pleasure to work with",
+    image: "https://placehold.co/600x400",
+    name: "Sarah",
+    company: "Friend",
+
+  },
+ 
+
+];
+
+
