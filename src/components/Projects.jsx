@@ -7,12 +7,12 @@ function Projects() {
     <div>
       <section id="projects" className="text-gray-400 bg-white body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-20">
-          <div className="flex flex-col w-full mb-20">
-            <CodeIcon className="mx-auto inline-block w-10 mb-4" />
-            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-purple-400">
+          <div className="flex flex-col w-full mb-20 ">
+            <CodeIcon className="mx-auto inline-block w-10 mb-4 text-blue-800" />
+            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-blue-800">
               Check out my latest Apps
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
               Click one one of the images bellow to see the repo or the deployed
               App!
             </p>
@@ -27,8 +27,8 @@ function Projects() {
               >
                 <div className="rounded-xl">
                   <img 
-                  className="object-cover object-center"
-                  alt="gallery"
+                  className="object-cover object-center h-auto mx-auto"
+                  alt="Project image"
                   src={project.image} />
                 </div>
 

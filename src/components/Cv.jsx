@@ -9,11 +9,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 function Cv() {
 
   return (
-    
-  
        <div className="flex mb-4">
        <div className="flex-1 bg-gray-500 h-12">
-
  <iframe src={cv} width='100%' style={{height: '87vh'}} />
  </div>
      </div>

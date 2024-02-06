@@ -1,6 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function Contact() {
+const [formData, setFormData] = useState({
+  name: '',
+  email: '',
+  message: '',
+})
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+
+ setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", name, email, message }),
+  //   })
+  //     .then(() => alert("Message sent!"))
+  //     .catch((error) => alert(error));
+  // }
+
+
   return (
     <section  className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -39,9 +66,10 @@ export default function Contact() {
         </div>
         <form
           netlify
+          method='POST' 
           name="contact"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+          <h2 className="text-gray-400 sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
           <p className="leading-relaxed mb-5">
@@ -55,7 +83,9 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
-              className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              onChange={handleInputChange}
+              value={formData.name}
+              className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -66,7 +96,9 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
-              className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              onChange={handleInputChange}
+              value={formData.email}
+              className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -78,7 +110,9 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
-              className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              onChange={handleInputChange}
+              value={formData.message}
+              className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-800 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
           <button
