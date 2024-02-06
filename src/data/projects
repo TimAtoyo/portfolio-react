@@ -1,5 +1,5 @@
 import teamProfileGenerator from "../assets/teamProfileGenerator.png";
-// const path = process.env.PUBLIC_URL
+
 export const projects = [
   {
     title: "Team Profile Generator",
@@ -14,7 +14,7 @@ export const projects = [
     subtitle: "React",
     description:
       "A simple password generator app created using React The Ui simple and intuitive alowing user to set: length using a range from 8 - 24 and include number and special characters!",
-    image: "https://placehold.co/600x200",
+    image: "https://www.pexels.com/photo/close-up-shot-of-keyboard-buttons-2882630/",
     link: "https://github.com/TimAtoyo/reactPasswordGenerator",
   },
   {

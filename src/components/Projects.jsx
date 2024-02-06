@@ -1,7 +1,7 @@
 import React from "react";
 import { CodeBracketIcon as CodeIcon } from "@heroicons/react/24/solid";
 import projects from "../data/projects";
-
+import { Link } from "react-router-dom";
 function Projects() {
   return (
     <div>
@@ -21,9 +21,9 @@ function Projects() {
             {projects.map((project) => (
 
               <a
-                href={projects.link}
+                href={`${project.link}`}
                 key={project.subtitle}
-                className=" bg-gray-800 w-100 mx-2 flex flex-col rounded-xl p-3 shadow-lg hover:shadow-xl"
+                className="bg-gray-800 w-100 mx-2 flex flex-col rounded-xl p-3 shadow-lg hover:shadow-xl hover:bg-gray-700"
               >
                 <div className="rounded-xl">
                   <img 
@@ -31,7 +31,6 @@ function Projects() {
                   alt="Project image"
                   src={project.image} />
                 </div>
-
                 <div className="mt-1 flex flex-1 flex-col rounded-xl">
                   <div className="px-8 py-10  w-full h-full border-purple-400 bg-gray-900 transition duration-300 ease-in-out opacity-1 hover:opacity-100">
                     <h2 className="tracking-widest text-sm title-font font-medium text-purple-400 mb-1">

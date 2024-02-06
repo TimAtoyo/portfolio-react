@@ -18,7 +18,7 @@ export default function Navbar() {
               to="/projects"
               className="mr-5 text-gray-300 hover:text-white"
             >
-              Projects/Work
+              Projects
             </Link>
             <a href="/skills" className="mr-5 text-gray-300 hover:text-white">
               Skills
