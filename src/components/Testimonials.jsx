@@ -21,7 +21,7 @@ export default function Testimonials() {
                     alt="testimonial"
                     src={testimonial.image}
                     key={testimonial.quote}
-                    className="w-12 rounded-full flex-shrink-0 object-cover object-center"
+                    className="w-20 rounded-full flex-shrink-0 object-cover object-center"
                   />
                   <span className="flex-grow flex flex-col pl-4">
                     <span className="title-font font-medium text-white">

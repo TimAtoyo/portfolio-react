@@ -2,31 +2,31 @@
 
 export const testimonials = [
   {
-    quote: "Great at design a pleasure to work with",
-    image: "https://placehold.co/600x400",
+    quote: "Great at designer a pleasure to work with! Would reccomend in the future!",
+    image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     name: "Sarah",
     company: "Friend",
   },
  
   {
-    quote: "Great at design a pleasure to work with",
-    image: "https://placehold.co/600x400",
-    name: "Sarah",
-    company: "Friend",
-
-  },
- 
-  {
-    quote: "Great at design a pleasure to work with",
-    image: "https://placehold.co/600x400",
+    quote: "Wow I feel like he could read my mind and went above and beyond!",
+    image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     name: "Sarah",
     company: "Friend",
 
   },
  
   {
-    quote: "Great at design a pleasure to work with",
-    image: "https://placehold.co/600x400",
+    quote: "Would reccomend amillion times! Great attention to detail and amaizing listenner :)",
+    image: "https://images.pexels.com/photos/1370719/pexels-photo-1370719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Sarah",
+    company: "Friend",
+
+  },
+ 
+  {
+    quote: "Well what can I say this team is about getting thing done!",
+    image: "https://images.pexels.com/photos/633432/pexels-photo-633432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     name: "Sarah",
     company: "Friend",
 

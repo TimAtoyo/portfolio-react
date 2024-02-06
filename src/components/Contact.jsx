@@ -1,31 +1,33 @@
 import React, {useState} from "react";
-
-export default function Contact() {
-const [formData, setFormData] = useState({
+const initForm =  {
   name: '',
   email: '',
   message: '',
-})
+}
+export default function Contact() {
+const [formData, setFormData] = useState(initForm)
 
   const handleInputChange = (event) => {
+    event.preventDefault()
     const { name, value } = event.target;
 
  setFormData({
       ...formData,
       [name]: value,
     });
+    
+    initForm
   };
-
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "contact", name, email, message }),
-  //   })
-  //     .then(() => alert("Message sent!"))
-  //     .catch((error) => alert(error));
-  // }
+  function handleSubmit(e) {
+    e.preventDefault();
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ "form-name": "contact", name, email, message }),
+    // })
+    //   .then(() => alert("Message sent!"))
+    //   .catch((error) => alert(error));
+  }
 
 
   return (
@@ -117,6 +119,7 @@ const [formData, setFormData] = useState({
           </div>
           <button
             type="submit"
+            onSubmit={handleSubmit}
             className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
             Submit
           </button>
