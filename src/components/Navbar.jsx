@@ -19,16 +19,16 @@ export default function Navbar() {
               className="mr-5 text-gray-300 hover:text-white"
             >
               Projects
-            </Link>
-            <a href="/skills" className="mr-5 text-gray-300 hover:text-white">
+            </Link >
+            <Link to="/skills" className="mr-5 text-gray-300 hover:text-white">
               Skills
-            </a>
-            <a
-              href="/testimonials"
+            </Link>
+            <Link
+              to="/testimonials"
               className="mr-5 text-gray-300 hover:text-white"
             >
               Testimonials
-            </a>
+            </Link>
             <Link
               to="cv"
               className="mr-5 text-gray-300 hover:text-white"

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import About from './components/About'
@@ -23,22 +22,26 @@ const router = createBrowserRouter([
         {
         path: '/projects',
         element: <Projects />,
+        errorElement: <NotFountPage />
       },
         {
         path: '/skills',
-        element: <Skills />
+        element: <Skills />,
+        errorElement: <NotFountPage />
       },
         {
         path: '/testimonials',
-        element: <Testimonials />
+        element: <Testimonials />,
       },
         {
         path: '/cv',
-        element: <Cv />
+        element: <Cv />,
+        errorElement: <NotFountPage />
       },
         {
         path: '/hireme',
-        element: <Contact />
+        element: <Contact />,
+        errorElement: <NotFountPage />
       },
     ]
   },
