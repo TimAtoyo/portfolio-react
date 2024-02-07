@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
 import cv from '../assets/cv.pdf'
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(

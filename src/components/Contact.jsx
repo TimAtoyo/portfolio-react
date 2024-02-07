@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 const initForm =  {
   name: '',
   email: '',
@@ -20,13 +20,7 @@ const [formData, setFormData] = useState(initForm)
   };
   function handleSubmit(e) {
     e.preventDefault();
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", name, email, message }),
-    // })
-    //   .then(() => alert("Message sent!"))
-    //   .catch((error) => alert(error));
+ 
   }
 
 
@@ -67,7 +61,7 @@ const [formData, setFormData] = useState(initForm)
           </div>
         </div>
         <form
-          netlify
+         
           method='POST' 
           name="contact"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">

@@ -1,8 +1,8 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import About from './components/About'
-import Projects from './components/projects.jsx'
-import Skills from './components/Skills.jsx'
+import Projects from './components/projects'
+import Skills from './components/Skills'
 import Contact from './components/Contact'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import NotFountPage from './components/NotFoundPage.jsx';
@@ -50,12 +50,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <main>
-    {/* <Navbar />
-    <About />
-    <Projects />
-    <Skills />*/}
     <RouterProvider router={router} />
-    {/* <Contact />  */}
   </main>
   )
 }

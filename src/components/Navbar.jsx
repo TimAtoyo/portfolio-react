@@ -1,7 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import React from "react";
-import Home from "./About";
+
 
 export default function Navbar() {
   return (

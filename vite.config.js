@@ -21,6 +21,7 @@ export default defineConfig({
   server: {
     open: true,
     port: 3000
-  }, base: 
+  }, 
+  base: 
   "https://timatoyo.github.io/portfolio-react/",
 })

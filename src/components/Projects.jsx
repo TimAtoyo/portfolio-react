@@ -1,7 +1,5 @@
-import React from "react";
 import { CodeBracketIcon as CodeIcon } from "@heroicons/react/24/solid";
 import projects from "../data/projects";
-import { Link } from "react-router-dom";
 function Projects() {
   return (
     <div>
