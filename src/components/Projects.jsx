@@ -1,9 +1,10 @@
 import { CodeBracketIcon as CodeIcon } from "@heroicons/react/24/solid";
 import projects from "../data/projects";
+import { Link } from "react-router-dom";
 function Projects() {
   return (
     <div>
-      <section id="projects" className="text-gray-400 bg-white body-font">
+      <section className="text-gray-400 bg-white body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-20">
           <div className="flex flex-col w-full mb-20 ">
             <CodeIcon className="mx-auto inline-block w-10 mb-4 text-blue-800" />
@@ -18,8 +19,8 @@ function Projects() {
           <div className="my-6 mx-1 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 ">
             {projects.map((project) => (
 
-              <a
-                href={`${project.link}`}
+              <Link
+                to={`${project.link}`}
                 key={project.subtitle}
                 className="bg-gray-800 w-100 mx-2 flex flex-col rounded-xl p-3 shadow-lg hover:shadow-xl hover:bg-gray-700"
               >
@@ -40,7 +41,7 @@ function Projects() {
                     <p className="leading-relaxed text-blue-100">{project.description}</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
