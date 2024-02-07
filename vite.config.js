@@ -17,10 +17,19 @@ export default defineConfig({
       name: 'prettier',
       apply: 'build', // Applies formatting only during build
     },
+    
   ],
+  optimizeDeps: {
+    // include: ['linked-dep'],
+  },
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+      // include: [/linked-dep/, /node_modules/],
+    },
+  },
   server: {
     open: true,
     port: 3000
   }, 
-
 })
