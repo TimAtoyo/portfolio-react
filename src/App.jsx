@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         errorElement: <NotFountPage />
       },
     ]
-  },
+  }
 
 ])
 function App() {
