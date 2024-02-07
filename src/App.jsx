@@ -23,9 +23,6 @@ const router = createBrowserRouter([
         {
         path: '/projects',
         element: <Projects />,
-        children: [
-          
-        ]
       },
         {
         path: '/skills',
