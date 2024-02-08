@@ -3,7 +3,7 @@ export const projects = [
     title: "Team Profile Generator",
     subtitle: "NodeJs",
     description:
-      "The motivation for this project was for a  Manager of a team  to create a web page with their team members quickly and efficiently! Once you run the app and input your team details on the terminal their profiles are then generated",
+      "The motivation for this project was for a  Manager of a team  to create a web page with their team members quickly and efficiently! Once you run the app and input your team details in terminal, their profiles are then generated to a webpage!",
     image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     link: "https://github.com/TimAtoyo/teamProfileGenerator",
   },
@@ -11,7 +11,7 @@ export const projects = [
     title: "Secure Password Generate",
     subtitle: "React",
     description:
-      "A simple password generator app created using React The Ui simple and intuitive allowing user to set: length using a range from 8 - 24 and include number and special characters!",
+      "A simple password generator app created using React. The Ui simple and intuitive allowing user to set: length using a range from 8 - 24 and include number and special characters!",
     image: "https://images.pexels.com/photos/2882630/pexels-photo-2882630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     link: "https://github.com/TimAtoyo/reactPasswordGenerator",
   },
@@ -19,7 +19,7 @@ export const projects = [
     title: "WonderGurard",
     subtitle: "JavaScript HTML & CSS",
     description:
-      "A traveller's companion application that a user can use to navigate the world confidently. We used two APIs, travel advisory API and an currency converter API. Provides info about a destination coutries taveller risk level and the current exchage rate. This app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript",
+      "A traveller's companion application that a user can use to navigate the world confidently. Two APIs, travel advisory API and currency converter API. Provides info about a destination coutries taveller risk level and the current exchage rate. This app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript",
     image: "https://images.pexels.com/photos/1791583/pexels-photo-1791583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     link: "https://timatoyo.github.io/wonderGuard/",
   },

@@ -38,7 +38,7 @@ export default function Navbar() {
               to="https://www.linkedin.com/in/timothyatoyo/"
               className="mr-5 text-gray-300 hover:text-white"
             >
-LimkedIn
+LinkedIn
             </Link>
             <Link
               to="https://github.com/TimAtoyo"

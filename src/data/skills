@@ -1,5 +1,5 @@
 export const skills = [
-    'JS', 'ES6+', 'CSS3', 'TailWind',  'HTML5', 'GitHub', 'Git', 'MySQL', 'React', 'Node.JS', 'JQuery', 'Bootstrap', 'MJML', 'Figma', 'C#', 'Test-driven development - (Jest)', 'APIs', 'AJAX'
+    'JS', 'ES6+', 'CSS3', 'Tailwind',  'HTML5', 'GitHub', 'Git', 'MySQL', 'React', 'Node.JS', 'JQuery', 'Bootstrap', 'MJML', 'Figma', 'C#', 'TDD - (Jest)',  'Vitest', 'BDD', 'APIs', 'AJAX',
 ];
 
 export default skills;
