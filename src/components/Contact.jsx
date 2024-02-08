@@ -1,4 +1,5 @@
 import React from 'react';
+import './Contact.css'
 import {useEffect, useState} from "react";
 
 export default function Contact() {
@@ -11,43 +12,39 @@ export default function Contact() {
 
   // Use state
   const [formData, setFormData] = useState(initForm)
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [errors, setErrors] = useState({})
   
 // Handle change 
-  const handleInputChange = (e) => {
-    e.preventDefault()
-    const { name, value } = e.target;
-    setFormData({...formData,
-              [name]: value,
+     const handleChange = e => {
+    const { name, value } = e.target
+    setFormData({
+        ...formData, 
+        [name]: value
     })
-};
+}
 
-    // Form validation
-    const validate = formData => {
-        let formErrors = {}
-
-        if(!formData.name) {
-          formErrors.name = 'Name required'
-        }
-
-        if(!formData.email) {
-          formErrors.name = 'Name required'
-        }
-
-        if(!formData.message) {
-          formErrors.name = 'Name required'
-        }
+const [errors, setErrors] = useState({})
+const validate = (formData) => {
+    let formErrors = {}
+    if(!formData.name){
+        formErrors.name = "Name required"
+    }
+    if(!formData.email){
+        formErrors.email = "Email required"
+    } 
+    if(!formData.message){
+        formErrors.message = "Message is required"
+    }
     return formErrors
-    }
+}
 
-    // Form Submition
-    const handleSubmit = e => {
-      setErrors(validate(FormData))
-      setIsSubmitted(true)
-      e.preventDefault();
-    }
+const [isSubmitted, setIsSubmitted] = useState(false)
 
+const handleSubmit = e => {
+    setErrors(validate(formData))
+    setIsSubmitted(true)
+    e.preventDefault();
+
+}
     const encode = (data) => {
       return Object.keys(data)
           .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -126,7 +123,7 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
-              onChange={handleInputChange}
+              onChange={handleChange}
               value={formData.name}
               className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
@@ -140,7 +137,7 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
-              onChange={handleInputChange}
+              onChange={handleChange}
               value={formData.email}
               className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
@@ -155,7 +152,7 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
-              onChange={handleInputChange}
+              onChange={handleChange}
               value={formData.message}
               className="w-full bg-gray-200 rounded border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-800 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
