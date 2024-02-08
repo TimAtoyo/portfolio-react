@@ -3,7 +3,6 @@ import './Contact.css'
 import {useEffect, useState} from "react";
 
 export default function Contact() {
-  
   const initForm =  {
     name: '',
     email: '',
