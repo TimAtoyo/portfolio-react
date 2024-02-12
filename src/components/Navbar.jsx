@@ -51,10 +51,10 @@ LinkedIn
           </nav>
           <Link
             to="/hireme"
-            className="inline-flex text-white items-center bg-blue-500 border-b-4 border-blue-900 border- py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-blue-500 transition ease-in-out delay-150 hover:translate-x-2 rounded text-base mt-4 md:mt-0"
+            className="inline-flex text-white justify-self-end items-center bg-blue-500 border-b-4 border-blue-900 border- py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-blue-500 transition ease-in-out delay-150 hover:translate-x-2 rounded text-base mt-4 md:mt-0"
           >
             Hire Me
-            <ArrowRightIcon className="w-4 h-4 ml-1" />
+            <ArrowRightIcon className="w-4 h-4 ml-1 " />
           </Link>
         </div>
       </header>

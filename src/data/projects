@@ -15,14 +15,7 @@ export const projects = [
     image: "https://images.pexels.com/photos/2882630/pexels-photo-2882630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     link: "https://github.com/TimAtoyo/reactPasswordGenerator",
   },
-  {
-    title: "WonderGurard",
-    subtitle: "JavaScript HTML & CSS",
-    description:
-      "A traveller's companion application that a user can use to navigate the world confidently. Two APIs, travel advisory API and currency converter API. Provides info about a destination coutries taveller risk level and the current exchage rate. This app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript",
-    image: "https://images.pexels.com/photos/1791583/pexels-photo-1791583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    link: "https://timatoyo.github.io/wonderGuard/",
-  },
+
   {
     title: "The Code Quiz App",
     subtitle: "Javascript HTML & CSS",
@@ -30,6 +23,14 @@ export const projects = [
       "The Code Quiz App is a dynamic web application designed for users taking a front-end course. It features a quiz with questions in four main sections: HTML Basics, CSS Fundamentals, JavaScript Essentials, and Responsive Web Design.",
     image: 'https://images.pexels.com/photos/5905434/pexels-photo-5905434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     link: "https://timatoyo.github.io/front-code-quiz/",
+  },
+  {
+    title: "WonderGurard",
+    subtitle: "JavaScript HTML & CSS",
+    description:
+      "A traveller's companion application that a user can use to navigate the world confidently. Two APIs, travel advisory API and currency converter API. Provides info about a destination coutries taveller risk level and the current exchage rate. This app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript",
+    image: "https://images.pexels.com/photos/1791583/pexels-photo-1791583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    link: "https://timatoyo.github.io/wonderGuard/",
   },
 ];
 
