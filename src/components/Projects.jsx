@@ -12,7 +12,7 @@ function Projects() {
               Check out my latest Apps
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-black">
-              Click on one of the images bellow to see the repo or the deployed
+              Click one one of the images bellow to see the repo or the deployed
               App!
             </p>
           </div>

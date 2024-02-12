@@ -3,13 +3,13 @@ import headshot from '../assets/headshot.png'
 import { Link } from 'react-router-dom'
 function About() {
   return (
-    <section >
-      <div className="container mx-auto flex gap-10 flex-row-reverse  py-0 md:flex-row:flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-12 md:mb-0 items-center text-center">
+    <section  className='flex justify-center'>
+      <div className="container  justify-around flex gap-10 flex-row-reverse  py-0 md:flex-row:flex-col items-center sm:flex-nowrap flex-wrap">
+        <div className="lg:flex-grow md:w-1/2 order-last sm:order-first lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-12 md:mb-0 items-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-blue-800  ">
             Hi, I'm NazarineBeats.
           </h1>
-          <h2 className="hidden lg:inline-block text-sm  sm:text-4xl mb-4 font-bold">I love to build.</h2>
+          <h2 className=" lg:inline-block text-sm  sm:text-4xl mb-4 font-bold">I love to build.</h2>
           <p className="mb-8 leading-relaxed">
         Renowned for crafting visually captivating experiences for industry leaders such as Costa and Microsoft. I excel in exceeding client expectations. Join me in transforming your story into a captivating digital narrative—a journey where pixels transcend boundaries and digital experiences become timeless masterpieces.
           </p>
@@ -26,7 +26,7 @@ function About() {
             </ Link>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:grid-cols-2" >
+        <div className="sm:items-center  items-start lg:max-w-lg lg:w-full md:w-1/2  md:grid-cols-2" >
           <img
             className="object-cover object-center rounded"
             alt="hero"
