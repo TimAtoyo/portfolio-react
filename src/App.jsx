@@ -5,7 +5,8 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-// import NotFountPage from './components/NotFoundPage.jsx';
+
+
 import Cv from './components/Cv.jsx'
 import Testimonials from './components/Testimonials.jsx'
 

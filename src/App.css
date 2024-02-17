@@ -1,7 +1,58 @@
+/* *{
+  outline:2px solid blue;
+}  */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding-block: 1rem;
+  padding-block: 0.5rem;
   padding-inline:0em;
   text-align: center;
+ 
 }
+
+
+.active {
+  background-color:#ec4899;
+  color:white!important;
+}
+header {
+  position:relative;
+  /* padding: 1.25rem */
+}
+header .menu {
+  display:none;
+  position:absolute;
+  
+  top:30%;
+  right: 5%;
+  flex-direction: column;
+  justify-content: space-between;
+  width:3rem;
+  height:2rem;
+  pointer:cursor;
+}
+
+header .menu span {
+  height:0.3rem;
+  width:100%;
+  background-color:white;
+  border-radius:0.2rem;
+}
+
+
+@media (max-width:680px){
+  header .menu {
+    display:flex;
+  }
+  header .nav-container {
+    display:none;
+    flex-direction: column;
+    align-items:end;
+  }
+
+  header a {
+    margin:0.2rem 0.5rem;
+  }
+}
+

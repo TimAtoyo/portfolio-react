@@ -5,8 +5,8 @@ function About() {
   return (
     <section  className='flex justify-center'>
       <div className="container  justify-around flex gap-10 flex-row-reverse  py-0 md:flex-row:flex-col items-center sm:flex-nowrap flex-wrap">
-        <div className="lg:flex-grow md:w-1/2 order-last sm:order-first lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-12 md:mb-0 items-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-blue-800  ">
+        <div className="lg:flex-grow md:w-1/2 order-last sm:order-first lg:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-12 md:mb-0 ">
+          <h1 className="title-font text-3xl md:text-3xl lg:text-7xl mb-4 font-extrabold text-transparent text-blue-800 bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-300 to-pink-500">
             Hi, I'm NazarineBeats.
           </h1>
           <h2 className=" lg:inline-block text-sm  sm:text-4xl mb-4 font-bold">I love to build.</h2>

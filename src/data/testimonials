@@ -17,7 +17,7 @@ export const testimonials = [
   },
  
   {
-    quote: "Would reccomend amillion times! Great attention to detail and amaizing listenner :)",
+    quote: "Would reccomend a million times! Great attention to detail and amazing listener :)",
     image: "https://images.pexels.com/photos/1370719/pexels-photo-1370719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     name: "Sarah",
     company: "Friend",
